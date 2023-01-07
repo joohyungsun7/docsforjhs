@@ -1,7 +1,7 @@
 Introduction
 ===================================
 
-This is a testing **Joohyung**'s personal docs!
+This is a testing **Joohyung**'s personal docs! (in ``source`` directory)
 
 Check out ref ... :doc:`background`, :doc:`usage`, :doc:`api`.
 
