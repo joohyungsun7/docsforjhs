@@ -3,13 +3,9 @@ Introduction
 
 This is a testing **Joohyung**'s personal docs!
 
-Links:
+Check out ref ... :ref:`background`, :ref:`usage`, :ref:`api`.
 
-   :ref:`background`
-   
-   :ref:`usage`
-   
-   :ref:`api`
+Check out ref ... :doc:`background`, :ref:`usage`, :ref:`api`.
 
 .. note::
 
@@ -19,6 +15,7 @@ Contents
 ------------
 
 .. toctree::
+
    background
    usage
    api
