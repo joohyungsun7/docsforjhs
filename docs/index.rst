@@ -12,7 +12,6 @@ Contents
 
 .. toctree::
 
-   welcome
    background
    usage
    api
