@@ -1,20 +1,18 @@
-Welcome
-=====
+Introduction
+===================================
 
-.. _test01:
+This is a testing **Joohyung**'s personal docs!
 
-Test
+.. note::
+
+   This project is under active development.
+   
+Contents
 ------------
 
-This is a ``testing`` docs:
+.. toctree::
 
-.. code-block:: console
-
-   # test ... code lines
-
-Another test
-----------------
-
-This is another ``testing`` docs:
-
-.. code-block:: test
+   welcome
+   background
+   usage
+   api
