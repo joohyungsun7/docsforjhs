@@ -1,5 +1,5 @@
-Welcome to Lumache's documentation!
+Welcome to Joohyung's personal documentation!
 ===================================
 
-Test
+Testing...
  
