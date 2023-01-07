@@ -2,9 +2,13 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+# org. info.
+#project = 'Lumache'
+#copyright = '2021, Graziella'
+#author = 'Graziella'
+project = 'docsforjhs'
+copyright = '2023'
+author = 'Joohyung Sun'
 
 release = '0.1'
 version = '0.1.0'
