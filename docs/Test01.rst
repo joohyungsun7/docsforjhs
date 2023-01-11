@@ -21,9 +21,17 @@ Practice 3 at 2023-01-12
 xCAT provisioning tool 설치
 
 .. code-block:: console
+
    ls -alh
    
 .. code-block:: console
 
    pwd
    ls
+   
+Title 02
+=====
+
+.. note::
+
+   Is it working?
