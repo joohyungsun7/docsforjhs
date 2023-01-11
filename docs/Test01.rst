@@ -1,6 +1,8 @@
 xCAT 활용 연습
 =====
 
+.. _Introduction:
+
 .. note::
 
    내부 정보 표출되지 않도록 확인 필수!
@@ -31,6 +33,8 @@ xCAT provisioning tool 설치
    
 Title 02
 =====
+
+.. _Introduction:
 
 .. note::
 
