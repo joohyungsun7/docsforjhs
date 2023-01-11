@@ -1,14 +1,13 @@
-Test01
+xCAT 활용 연습
 =====
 
-.. _Introduction:
-
-xCAT 활용 연습
-
-This is a ``Test01`` docs:
 
 
-Subcategory title
+.. note::
+
+   내부 정보 표출되지 않도록 확인 필수!
+
+Practice 1 at 2023-01-11
 ----------------
 
 This is another ``testing`` docs:
