@@ -1,4 +1,4 @@
-Practice of Redfish
+레드피쉬 
 =====
 
 .. _Introduction:
@@ -105,39 +105,25 @@ Installing for dependencies:
    cd dist
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
-기본 python3 설치 (일반적인 경우 기반)
-
-.. code-block:: console
-
-   yum install python3 pip3
-
-Installing:
- python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
-Installing for dependencies:
- python3-libs            x86_64      3.6.8-10.el7        RHEL7-server-rpms      7.0 M
- python3-pip             noarch      9.0.3-5.el7         RHEL7-server-rpms      1.8 M
- python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
-
-
 `import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목(`1)~`)이 선행 설치되어야 함)
 
 1. jsonpatch-1.32-py2.py3-none-any.whl
 
-   1) six-1.16.0-py2.py3-none-any.whl
+   (1) six-1.16.0-py2.py3-none-any.whl
    
-   2) urllib3-1.26.14-py2.py3-none-any.whl
+   (2) urllib3-1.26.14-py2.py3-none-any.whl
    
-   3) jsonpointer-2.3-py2.py3-none-any.whl
+   (3) jsonpointer-2.3-py2.py3-none-any.whl
    
 2. jsonpath-rw-1.4.0.tar.gz
   
-   1) ply-3.11-py2.py3-none-any.whl
+   2.1. ply-3.11-py2.py3-none-any.whl
    
-   2) decorator-5.1.1-py3-none-any.whl
+   2.2. decorator-5.1.1-py3-none-any.whl
    
 3. python-ilorest-library-4.0.0.0.zip
 
-   1) certifi-2022.12.7-py3-none-any.whl
+   (1) certifi-2022.12.7-py3-none-any.whl
 
 
 .. code-block:: console
