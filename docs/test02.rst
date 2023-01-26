@@ -49,10 +49,10 @@ Setting. 내부 정보 비공개
 
 [bmc-passwd]: 원격 관리자 비밀번호, 예시) p1234
     
-Practice 1. iLO RESTful API 
+Practice 1. iLO RESTful API (xmldata)
 ----------------
 
-가장 기본적인 확인 방법 연습
+가장 기본적인 확인 방법 연습: 
  
 .. code-block:: console
 
@@ -60,10 +60,10 @@ Practice 1. iLO RESTful API
 
 시리얼 넘버, UUID/cUUID, 제품ID, NIC 정보 (IP, MAC 등), 펌웨어 정보, 상태 정보 등을 요청하고 그 결과값을 출력함
 
-Practice 2. iLO RESTful API
+Practice 2. iLO RESTful API (redfish)
 ----------------
 
-일단, HP iLO 5에는 레드피쉬가 기본으로 설정되어 있는 것으로 보이며, 이를 테스트하면 다음과 같음
+일단, HP iLO 5에는 레드피쉬가 기본으로 설정되어 있는 것으로 보이며, 이를 테스트: 
 
 .. code-block:: console
 
@@ -76,7 +76,11 @@ Http-get요청을 통해 BIOS 설정 값을 JSON 포맷으로 받아옴. URL에 
 Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
 ----------------
 
-기본 python3 설치 (일반적인 경우 기반)
+기본 python3 설치 (일반적인 경우 기반): 
+ 
+.. code-block:: console
+
+   yum install python3 pip3
 
 Installing:
  python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
@@ -88,42 +92,37 @@ Installing for dependencies:
  
  python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
  
- 
-.. code-block:: console
-
-   yum install python3 pip3
    
 `redfish`를 모듈로 설치하여 활용하는 오픈소스로, 연관된 모듈 설치가 필요하여 모듈 dependency 체크 및 테스트 진행
 
 파이썬 기반 오픈소스 python-ilorest-library-master 깃헙(HP제공) 내용을 참조하여, `Building from zip file source`를 수행하기로 함
 
-깃헙 다운로드 후, 설치용 zip 파일 생성
-
+깃헙 다운로드 후, 설치용 zip 파일 생성: 
 .. code-block:: console
 
    python setup.py sdist --formats=zip
    cd dist
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
-`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목(`1)~`)이 선행 설치되어야 함)
+`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함)
 
-1. jsonpatch-1.32-py2.py3-none-any.whl
+1. jsonpatch-1.32-py2.py3-none-any.whl:
 
-   (1) six-1.16.0-py2.py3-none-any.whl
+   - six-1.16.0-py2.py3-none-any.whl
    
-   (2) urllib3-1.26.14-py2.py3-none-any.whl
+   - urllib3-1.26.14-py2.py3-none-any.whl
    
-   (3) jsonpointer-2.3-py2.py3-none-any.whl
+   - jsonpointer-2.3-py2.py3-none-any.whl
    
-2. jsonpath-rw-1.4.0.tar.gz
+2. jsonpath-rw-1.4.0.tar.gz:
   
-   2.1. ply-3.11-py2.py3-none-any.whl
+   - ply-3.11-py2.py3-none-any.whl
    
-   2.2. decorator-5.1.1-py3-none-any.whl
+   - decorator-5.1.1-py3-none-any.whl
    
-3. python-ilorest-library-4.0.0.0.zip
+3. python-ilorest-library-4.0.0.0.zip: 
 
-   (1) certifi-2022.12.7-py3-none-any.whl
+   - certifi-2022.12.7-py3-none-any.whl
 
 
 .. code-block:: console
