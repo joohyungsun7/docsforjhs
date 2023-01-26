@@ -24,7 +24,7 @@
    참조 :
     - https://www.paessler.com/it-explained/redfish
 
-레드피쉬를 활용하게 된 배경은 다음과 같다.
+레드피쉬를 활용하게 된 배경은 다음과 같음: 
 
 1. 해당 서버의 시스템 정보를 쉽게/편하게 받아서 확인하기 위함 (특히, iLO의 MAC주소)
 
@@ -43,11 +43,11 @@
 Setting. 내부 정보 비공개
 ----------------
 
-[bmc-ip]: 원격 관리 IP / BMC 주소 / iLO 주소?, 예시) 12.12.12.123
+센터내 정보는 비공개로 하며, 예시로 대신함
 
-[bmc-usname]: 원격 관리자 이름, 예시) admin
-
-[bmc-passwd]: 원격 관리자 비밀번호, 예시) p1234
+- [bmc-ip]: 원격 관리 IP / BMC 주소 / iLO 주소?, 예시) 12.12.12.123
+- [bmc-usname]: 원격 관리자 이름, 예시) admin
+- [bmc-passwd]: 원격 관리자 비밀번호, 예시) p1234
     
 Practice 1. iLO RESTful API (xmldata)
 ----------------
@@ -73,7 +73,7 @@ Http-get요청을 통해 BIOS 설정 값을 JSON 포맷으로 받아옴. URL에 
 
 사전에 제공되는 URL 정보를 수집하던 중, HP에서 iLO RESTful API를 파이썬 기반 오픈소스로 제공 중임을 확인했고, 이를 테스트하기로 계획
 
-Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
+Practice 3. 파이썬 기반 오픈소스 iLO RESTful API 
 ----------------
 
 기본 python3 설치 (일반적인 경우 기반): 
@@ -83,14 +83,12 @@ Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 202
    yum install python3 pip3
 
 Installing:
- python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
+ - python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
  
 Installing for dependencies:
- python3-libs            x86_64      3.6.8-10.el7        RHEL7-server-rpms      7.0 M
- 
- python3-pip             noarch      9.0.3-5.el7         RHEL7-server-rpms      1.8 M
- 
- python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
+ - python3-libs            x86_64      3.6.8-10.el7        RHEL7-server-rpms      7.0 M
+ - python3-pip             noarch      9.0.3-5.el7         RHEL7-server-rpms      1.8 M
+ - python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
  
    
 `redfish`를 모듈로 설치하여 활용하는 오픈소스로, 연관된 모듈 설치가 필요하여 모듈 dependency 체크 및 테스트 진행
@@ -106,7 +104,6 @@ Installing for dependencies:
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
 `import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함): 
-
 1. jsonpatch-1.32-py2.py3-none-any.whl:
 
    - six-1.16.0-py2.py3-none-any.whl
