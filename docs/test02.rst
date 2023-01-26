@@ -40,7 +40,7 @@
     - https://hewlettpackard.github.io/ilo-rest-api-docs/ilo5/#key-benefits-of-the-ilo-restful-api
     - https://github.com/HewlettPackard/python-ilorest-library
     
-Setting. 내부 정보 비공개
+Setting. iLO / bmc
 ----------------
 
 센터내 정보는 비공개로 하며, 예시로 대신함
