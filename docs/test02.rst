@@ -76,6 +76,23 @@ Http-get요청을 통해 BIOS 설정 값을 JSON 포맷으로 받아옴. URL에 
 Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
 ----------------
 
+기본 python3 설치 (일반적인 경우 기반)
+
+Installing:
+ python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
+ 
+Installing for dependencies:
+ python3-libs            x86_64      3.6.8-10.el7        RHEL7-server-rpms      7.0 M
+ 
+ python3-pip             noarch      9.0.3-5.el7         RHEL7-server-rpms      1.8 M
+ 
+ python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
+ 
+ 
+.. code-block:: console
+
+   yum install python3 pip3
+   
 `redfish`를 모듈로 설치하여 활용하는 오픈소스로, 연관된 모듈 설치가 필요하여 모듈 dependency 체크 및 테스트 진행
 
 파이썬 기반 오픈소스 python-ilorest-library-master 깃헙(HP제공) 내용을 참조하여, `Building from zip file source`를 수행하기로 함
