@@ -11,7 +11,6 @@
 
 레드피쉬는 JSON 포맷과 CSDL을 사용하여 OData v4에 의해 정의된 스키마 기반의 RESTful 인터페이스를 HTTP를 통해 제공한다.
 
-.. note::
    - RESTful: Representational State Transfer
    - HTTP: Hypertext Transfer Protocol
    - JSON: JavaScript Object Notation
