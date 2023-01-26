@@ -106,16 +106,19 @@ Installing for dependencies:
 `import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함)
 
 #. jsonpatch-1.32-py2.py3-none-any.whl
-   * six-1.16.0-py2.py3-none-any.whl   
-   * urllib3-1.26.14-py2.py3-none-any.whl   
-   * jsonpointer-2.3-py2.py3-none-any.whl
+
+   #. six-1.16.0-py2.py3-none-any.whl   
+   #. urllib3-1.26.14-py2.py3-none-any.whl   
+   #. jsonpointer-2.3-py2.py3-none-any.whl
    
 #. jsonpath-rw-1.4.0.tar.gz
-   * ply-3.11-py2.py3-none-any.whl   
-   * decorator-5.1.1-py3-none-any.whl
+
+   #. ply-3.11-py2.py3-none-any.whl   
+   #. decorator-5.1.1-py3-none-any.whl
    
 #. python-ilorest-library-4.0.0.0.zip
-   * certifi-2022.12.7-py3-none-any.whl
+
+   #. certifi-2022.12.7-py3-none-any.whl
 
 
 .. code-block:: console
