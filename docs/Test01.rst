@@ -30,12 +30,4 @@ xCAT provisioning tool 설치
 
    pwd
    ls
-   
-Title 02
-=====
 
-.. _Introduction:
-
-.. note::
-
-   Is it working?
