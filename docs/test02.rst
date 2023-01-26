@@ -98,13 +98,14 @@ Installing for dependencies:
 파이썬 기반 오픈소스 python-ilorest-library-master 깃헙(HP제공) 내용을 참조하여, `Building from zip file source`를 수행하기로 함
 
 깃헙 다운로드 후, 설치용 zip 파일 생성: 
+
 .. code-block:: console
 
    python setup.py sdist --formats=zip
    cd dist
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
-`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함)
+`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함): 
 
 1. jsonpatch-1.32-py2.py3-none-any.whl:
 
