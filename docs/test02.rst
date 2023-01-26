@@ -26,13 +26,13 @@
 
 레드피쉬를 활용하게 된 배경은 다음과 같음: 
 
-1. 해당 서버의 시스템 정보를 쉽게/편하게 받아서 확인하기 위함 (특히, iLO의 MAC주소)
+#. 해당 서버의 시스템 정보를 쉽게/편하게 받아서 확인하기 위함 (특히, iLO의 MAC주소)
 
-2. 사전에 정의된 CI 정보 추출, iLO에 CLI를 통한 접근, snmp로 데이터 수집 등 여러 방안 살펴보던 중에, iLO에서 이미 설정한 RESTful 기반의 프로토콜 연결을 확인함
+#. 사전에 정의된 CI 정보 추출, iLO에 CLI를 통한 접근, snmp로 데이터 수집 등 여러 방안 살펴보던 중에, iLO에서 이미 설정한 RESTful 기반의 프로토콜 연결을 확인함
 
-3. iLO 연결 및 RESTful 요청을 통해, snmp를 통한 데이터 수집 설정, 부트 오더 확인 및 설정, iLO MAC 주소 등등 많은 활용 방안이 가능해짐
+#. iLO 연결 및 RESTful 요청을 통해, snmp를 통한 데이터 수집 설정, 부트 오더 확인 및 설정, iLO MAC 주소 등등 많은 활용 방안이 가능해짐
 
-4. 해당 활용 방안(특히, 레드피쉬)이 구체화된 파이썬 기반 오픈소스를 찾았고, 이를 사용하기로 결정함
+#. 해당 활용 방안(특히, 레드피쉬)이 구체화된 파이썬 기반 오픈소스를 찾았고, 이를 사용하기로 결정함
 
 .. note::
 
@@ -103,24 +103,19 @@ Installing for dependencies:
    cd dist
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
-`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함): 
-1. jsonpatch-1.32-py2.py3-none-any.whl:
+`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목이 선행 설치되어야 함)
 
-   - six-1.16.0-py2.py3-none-any.whl
+#. jsonpatch-1.32-py2.py3-none-any.whl
+   * six-1.16.0-py2.py3-none-any.whl   
+   * urllib3-1.26.14-py2.py3-none-any.whl   
+   * jsonpointer-2.3-py2.py3-none-any.whl
    
-   - urllib3-1.26.14-py2.py3-none-any.whl
+#. jsonpath-rw-1.4.0.tar.gz
+   * ply-3.11-py2.py3-none-any.whl   
+   * decorator-5.1.1-py3-none-any.whl
    
-   - jsonpointer-2.3-py2.py3-none-any.whl
-   
-2. jsonpath-rw-1.4.0.tar.gz:
-  
-   - ply-3.11-py2.py3-none-any.whl
-   
-   - decorator-5.1.1-py3-none-any.whl
-   
-3. python-ilorest-library-4.0.0.0.zip: 
-
-   - certifi-2022.12.7-py3-none-any.whl
+#. python-ilorest-library-4.0.0.0.zip
+   * certifi-2022.12.7-py3-none-any.whl
 
 
 .. code-block:: console
