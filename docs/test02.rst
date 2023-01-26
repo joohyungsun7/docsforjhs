@@ -162,7 +162,24 @@ Installing for dependencies:
 Practice 4. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
 ----------------
 
-`import redfish` 문제 없음 확인 후, 테스트용 파이썬 코드 수행
+`import redfish` 문제 없음 확인 후, 테스트용 파이썬 코드 수행:
 
+.. code-block:: console
 
-   
+   python3 quickstart_redfish.py
+
+* Source : https://github.com/HewlettPackard/python-ilorest-library/blob/master/examples/quickstart_redfish.py
+
+필요 정보:
+ - SYSTEM_URL = [bmc-ip], 예시) 12.12.12.123
+ - LOGIN_ACCOUNT = [bmc-usname], 예시) admin
+ - LOGIN_PASSWORD = [bmc-passwd], 예시) p1234
+
+이외에도, 활용하기 좋은 파이썬 코드가 examples에 제공되어 있음:
+ - computer_detail.py
+ - get_bios_setting.py
+ - change_bios_setting.py
+ - change_boot_order.py
+ - change_temporary_boot_order.py
+ 
+ 
