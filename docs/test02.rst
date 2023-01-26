@@ -48,6 +48,8 @@ Setting. iLO / bmc
 - [bmc-ip]: 원격 관리 IP / BMC 주소 / iLO 주소?, 예시) 12.12.12.123
 - [bmc-usname]: 원격 관리자 이름, 예시) admin
 - [bmc-passwd]: 원격 관리자 비밀번호, 예시) p1234
+
+테스트 일자: 2023-01-26
     
 Practice 1. iLO RESTful API (xmldata)
 ----------------
@@ -154,7 +156,7 @@ Installing for dependencies:
    - 11K   six-1.16.0-py2.py3-none-any.whl       
    - 138K  urllib3-1.26.14-py2.py3-none-any.whl  
    
-Practice 4. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
+Practice 4. 파이썬 기반 오픈소스 iLO RESTful API 
 ----------------
 
 `import redfish` 문제 없음 확인 후, 테스트용 파이썬 코드 수행:
