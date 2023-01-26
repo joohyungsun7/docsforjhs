@@ -12,10 +12,10 @@ Practice of Redfish
 레드피쉬는 JSON 포맷과 CSDL을 사용하여 OData v4에 의해 정의된 스키마 기반의 RESTful 인터페이스를 HTTP를 통해 제공한다.
 
 .. note::
-   RESTful: Representational State Transfer
-   HTTP: Hypertext Transfer Protocol
-   JSON: JavaScript Object Notation
-   CSDL: Common Schema Definition Language
+   - RESTful: Representational State Transfer
+   - HTTP: Hypertext Transfer Protocol
+   - JSON: JavaScript Object Notation
+   - CSDL: Common Schema Definition Language
 
 레드피쉬는 iLO 5와 함께 상용 서버(e.g., Dell PowerEdge 13G/14G servers, Supermicro X10/X11 servers, HPE ProLiant servers)에서 사용된다. 소프트웨어에서는 OpenStack Ironic, Ansible, ManageIQ에서 사용된다. 레드피쉬는 Supermicro, Oracle, Cisco, Lenovo, Dell, HPE, Intel, Microsoft, Huawei 등 다양한 업체에 의해 지원되고 있다.
 
@@ -53,7 +53,6 @@ Practice 1. iLO RESTful API
 ----------------
 
 가장 기본적인 확인 방법 연습
- - 
  
 .. code-block:: console
 
@@ -91,45 +90,59 @@ Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 202
 
 기본적인 python3에서 `import redfish`를 가능케 하기 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목(`1)~`)이 선행 설치되어야 함)
 
-   
-1. jsonpath-rw-1.4.0.tar.gz
-  
-   1) ply-3.11-py2.py3-none-any.whl
-   
-   2) decorator-5.1.1-py3-none-any.whl
-   
-2. jsonpatch-1.32-py2.py3-none-any.whl
+1. jsonpatch-1.32-py2.py3-none-any.whl
 
    1) six-1.16.0-py2.py3-none-any.whl
    
    2) urllib3-1.26.14-py2.py3-none-any.whl
    
    3) jsonpointer-2.3-py2.py3-none-any.whl
-
+   
+2. jsonpath-rw-1.4.0.tar.gz
+  
+   1) ply-3.11-py2.py3-none-any.whl
+   
+   2) decorator-5.1.1-py3-none-any.whl
+   
 3. python-ilorest-library-4.0.0.0.zip
 
    1) certifi-2022.12.7-py3-none-any.whl
 
 
+.. code-block:: console
+
+   # 1.
+   pip3 install six-1.16.0-py2.py3-none-any.whl
+   pip3 install urllib3-1.26.14-py2.py3-none-any.whl
+   pip3 install jsonpointer-2.3-py2.py3-none-any.whl
+   #
+   pip3 install jsonpatch-1.32-py2.py3-none-any.whl
+
+   # 2.
+   pip3 install ply-3.11-py2.py3-none-any.whl
+   pip3 install decorator-5.1.1-py3-none-any.whl
+   #
+   pip3 install jsonpath-rw-1.4.0.tar.gz
+
+   # 3.
+   pip3 install certifi-2022.12.7-py3-none-any.whl
+   #
+   pip3 install python-ilorest-library-4.0.0.0.zip
+
+
 .. note::
    
    모든 설치 파일 크기 정보 :   
-   152K  certifi-2022.12.7-py3-none-any.whl    
-   8.9K  decorator-5.1.1-py3-none-any.whl      
-   13K   jsonpatch-1.32-py2.py3-none-any.whl   
-   14K   jsonpath-rw-1.4.0.tar.gz              
-   7.6K  jsonpointer-2.3-py2.py3-none-any.whl  
-   49K   ply-3.11-py2.py3-none-any.whl         
-   93K   python-ilorest-library-4.0.0.0.zip    
-   2.2M  python-ilorest-library-master.zip     (github 전체 소스)
-   11K   six-1.16.0-py2.py3-none-any.whl       
-   138K  urllib3-1.26.14-py2.py3-none-any.whl  
+   - 152K  certifi-2022.12.7-py3-none-any.whl    
+   - 8.9K  decorator-5.1.1-py3-none-any.whl      
+   - 13K   jsonpatch-1.32-py2.py3-none-any.whl   
+   - 14K   jsonpath-rw-1.4.0.tar.gz              
+   - 7.6K  jsonpointer-2.3-py2.py3-none-any.whl  
+   - 49K   ply-3.11-py2.py3-none-any.whl         
+   - 93K   python-ilorest-library-4.0.0.0.zip    
+   - 2.2M  python-ilorest-library-master.zip     (github 전체 소스)
+   - 11K   six-1.16.0-py2.py3-none-any.whl       
+   - 138K  urllib3-1.26.14-py2.py3-none-any.whl  
    
-Title 02
-=====
 
-.. _Introduction:
-
-.. note::
-
-   Is it working?
+   
