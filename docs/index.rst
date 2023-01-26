@@ -17,7 +17,6 @@ Contents
 .. toctree::
 
    background
-   test02
    usage
    api
    Test01
