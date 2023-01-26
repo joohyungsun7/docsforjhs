@@ -88,7 +88,21 @@ Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 202
    cd dist
    # check python-ilorest-library-4.0.0.zip (pip install 대상)
 
-기본적인 python3에서 `import redfish`를 가능케 하기 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목(`1)~`)이 선행 설치되어야 함)
+기본 python3 설치 (일반적인 경우 기반)
+
+.. code-block:: console
+
+   yum install python3 pip3
+
+Installing:
+ python3                 x86_64      3.6.8-10.el7        RHEL7-server-rpms       69 k
+Installing for dependencies:
+ python3-libs            x86_64      3.6.8-10.el7        RHEL7-server-rpms      7.0 M
+ python3-pip             noarch      9.0.3-5.el7         RHEL7-server-rpms      1.8 M
+ python3-setuptools      noarch      39.2.0-10.el7       RHEL7-server-rpms      629 k
+
+
+`import redfish`를 위한 파이썬 모듈 목록을 작성 및 테스트 (아래 하위 항목(`1)~`)이 선행 설치되어야 함)
 
 1. jsonpatch-1.32-py2.py3-none-any.whl
 
@@ -131,8 +145,6 @@ Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 202
 
 
 .. note::
-   
-   모든 설치 파일 크기 정보 :   
    - 152K  certifi-2022.12.7-py3-none-any.whl    
    - 8.9K  decorator-5.1.1-py3-none-any.whl      
    - 13K   jsonpatch-1.32-py2.py3-none-any.whl   
@@ -144,5 +156,10 @@ Practice 3. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 202
    - 11K   six-1.16.0-py2.py3-none-any.whl       
    - 138K  urllib3-1.26.14-py2.py3-none-any.whl  
    
+Practice 4. 파이썬 기반 오픈소스 iLO RESTful API (테스트 일자: 2023-01-26)
+----------------
+
+`import redfish` 문제 없음 확인 후, 테스트용 파이썬 코드 수행
+
 
    
