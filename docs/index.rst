@@ -20,4 +20,3 @@ Contents
    usage
    api
    Test01
-   test02
