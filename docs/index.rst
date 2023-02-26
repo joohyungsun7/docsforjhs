@@ -21,3 +21,4 @@ Contents
    api
    Test01
    test02
+   memo
